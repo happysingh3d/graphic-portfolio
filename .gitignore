@@ -1,0 +1,7 @@
+node_modules/
+.gemini/
+gmail_config.json
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
