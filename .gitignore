@@ -5,3 +5,13 @@ gmail_config.json
 Thumbs.db
 desktop.ini
 *.log
+
+# Sensitive/private files
+*.pdf
+*.docx
+*.png
+!web/assets/**/*.png
+*.py
+*.txt
+!robots.txt
+dist/

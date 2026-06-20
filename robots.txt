@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://happysingh3d.github.io/graphic-portfolio/sitemap.xml

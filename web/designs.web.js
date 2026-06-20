@@ -2,9 +2,9 @@
 const designs = [
   {
     "id": "characters-2d_character",
-    "title": "2d character",
+    "title": "2D Character Illustrations",
     "category": "Characters",
-    "description": "",
+    "description": "A collection of original 2D character illustrations designed for gaming, mascot branding, and digital media. Each character was developed from concept sketches through to final colored artwork, bringing personality and storytelling to every design. Tools used: Adobe Illustrator, Photoshop.",
     "source": "",
     "thumbnail": "web/assets/characters/characters-2d_character_cover_thumb.jpg",
     "images": [
@@ -16,9 +16,9 @@ const designs = [
   },
   {
     "id": "posters_banners-bannersposters",
-    "title": "Banners/Posters",
+    "title": "Banner & Poster Collection",
     "category": "Posters Banners",
-    "description": "",
+    "description": "A diverse collection of 87 banner and poster designs created for clients across food & beverage, entertainment, automotive, retail, and lifestyle industries. Each piece balances bold visual impact with clear messaging, optimized for both print and digital formats. Tools used: Adobe Photoshop, Illustrator, InDesign.",
     "source": "",
     "thumbnail": "web/assets/posters_banners/posters_banners-bannersposters_cover_thumb.jpg",
     "images": [
@@ -51,9 +51,9 @@ const designs = [
   },
   {
     "id": "branding-logos",
-    "title": "Logos",
+    "title": "Logo Design Collection",
     "category": "Branding",
-    "description": "",
+    "description": "A showcase of 18 logo designs spanning multiple industries — from restaurants and real estate to tech startups and personal brands. Each mark was crafted to be memorable, scalable, and versatile across all media. Tools used: Adobe Illustrator, CorelDraw.",
     "source": "",
     "thumbnail": "web/assets/branding/branding-logos_cover_thumb.jpg",
     "images": [
@@ -80,9 +80,9 @@ const designs = [
   },
   {
     "id": "motion_graphics-logo_animation",
-    "title": "Logo Animation",
+    "title": "Logo Animation Concepts",
     "category": "Motion Graphics",
-    "description": "",
+    "description": "Logo animation concepts bringing static brand marks to life through motion. Each animation was designed to capture attention in the critical first seconds of video content, social media intros, and brand presentations. Tools used: Adobe After Effects, Premiere Pro.",
     "source": "",
     "thumbnail": "web/assets/motion_graphics/motion_graphics-logo_animation_cover_thumb.jpg",
     "images": [
@@ -92,9 +92,9 @@ const designs = [
   },
   {
     "id": "posters_banners-calendar_design",
-    "title": "Calendar Design",
+    "title": "Custom Calendar Designs",
     "category": "Posters Banners",
-    "description": "",
+    "description": "A series of 13 custom calendar designs featuring themed monthly layouts with original photography, typography, and seasonal color palettes. Created for corporate gifting and brand merchandising programs. Tools used: Adobe InDesign, Photoshop, Illustrator.",
     "source": "",
     "thumbnail": "web/assets/posters_banners/posters_banners-calendar_design_cover_thumb.jpg",
     "images": [
@@ -116,9 +116,9 @@ const designs = [
   },
   {
     "id": "motion_graphics-motion_graphic",
-    "title": "Motion Graphic",
+    "title": "Motion Graphics Showreel",
     "category": "Motion Graphics",
-    "description": "",
+    "description": "Motion graphic compositions combining kinetic typography, animated illustrations, and dynamic transitions for social media content, event promotions, and brand storytelling. Each piece demonstrates fluid visual storytelling through movement and timing. Tools used: Adobe After Effects, Premiere Pro, Illustrator.",
     "source": "",
     "thumbnail": "web/assets/motion_graphics/motion_graphics-motion_graphic_cover_thumb.jpg",
     "images": [

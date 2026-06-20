@@ -9,7 +9,7 @@ const $  = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
 /* ---------- Build category list dynamically ---------- */
-const CATEGORY_ORDER = ["All", "Branding", "Typography", "Posters", "Motion Graphics", "Character Design"];
+const CATEGORY_ORDER = ["All", "Branding", "Typography", "Posters Banners", "Motion Graphics", "Characters"];
 const present = new Set(designs.map(d => d.category));
 const categories = CATEGORY_ORDER.filter(c => c === "All" || present.has(c));
 
@@ -18,7 +18,7 @@ let activeFilter = "All";
 /* ---------- Hero stats ---------- */
 function renderStats() {
   const projects = designs.length;
-  const images = designs.reduce((a, d) => a + (d.count || d.images.length), 0);
+  const images = designs.reduce((a, d) => a + d.images.length, 0);
   const cats = present.size;
   const stats = [
     { n: projects, l: "Projects" },
@@ -187,11 +187,57 @@ $("#stage").addEventListener("touchend", e => {
   touchX = null;
 }, { passive: true });
 
-/* ---------- Header scroll state ---------- */
+/* ---------- Header scroll state + scroll-to-top ---------- */
+const scrollTopBtn = $("#scrollTop");
 addEventListener("scroll", () => {
   $(".site-header").style.background =
     scrollY > 20 ? "rgba(11,11,15,0.78)" : "rgba(11,11,15,0.6)";
+  
+  // Show/hide scroll-to-top button
+  if (scrollTopBtn) {
+    scrollTopBtn.classList.toggle("visible", scrollY > 400);
+  }
 }, { passive: true });
+
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+/* ---------- Scroll reveal (IntersectionObserver) ---------- */
+function initScrollReveal() {
+  const revealElements = $$(".about, .about-clients, .about-tools, .footer-cta, .socials");
+  revealElements.forEach(el => el.classList.add("reveal"));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("revealed");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+
+  revealElements.forEach(el => observer.observe(el));
+}
+
+/* ---------- Image error fallback ---------- */
+function initImageFallbacks() {
+  document.addEventListener("error", (e) => {
+    if (e.target.tagName === "IMG" && e.target.classList.contains("thumb")) {
+      e.target.style.display = "none";
+      const wrap = e.target.closest(".thumb-wrap");
+      if (wrap && !wrap.querySelector(".img-fallback")) {
+        const fallback = document.createElement("div");
+        fallback.className = "img-fallback";
+        fallback.style.cssText = "display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--text-faint);font-size:13px;";
+        fallback.textContent = "Image unavailable";
+        wrap.appendChild(fallback);
+      }
+    }
+  }, true);
+}
 
 /* ---------- Utils ---------- */
 function escapeHtml(s = "") {
@@ -204,3 +250,6 @@ $("#year").textContent = new Date().getFullYear();
 renderStats();
 renderFilters();
 renderGrid();
+initScrollReveal();
+initImageFallbacks();
+

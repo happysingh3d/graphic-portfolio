@@ -506,7 +506,198 @@ body::after {
   .filter-btn { padding: 8px 14px; font-size: 13px; }
 }
 
+/* ============================================================================
+   ABOUT SECTION
+   ========================================================================== */
+.about {
+  padding: 80px 0 60px;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+.about-text .eyebrow { margin-bottom: 20px; }
+.about-text h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(26px, 4vw, 44px);
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+  max-width: 20ch;
+}
+.about-text h2 .grad {
+  background: linear-gradient(110deg, var(--violet), var(--cyan));
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-text p {
+  margin-top: 18px;
+  color: var(--text-muted);
+  font-size: clamp(15px, 1.4vw, 17px);
+  max-width: 68ch;
+  line-height: 1.7;
+}
+.about-clients, .about-tools { margin-top: 32px; }
+.about-label {
+  display: block;
+  font-size: 11.5px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 14px;
+}
+.client-tags, .tool-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.client-tag {
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 500;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  transition: all .3s var(--ease);
+}
+.client-tag:hover {
+  border-color: var(--cyan);
+  box-shadow: 0 0 18px var(--glow-cyan);
+  transform: translateY(-2px);
+}
+.tool-badge {
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(6,182,212,0.08));
+  border: 1px solid rgba(99,102,241,0.2);
+  color: var(--text);
+  transition: all .3s var(--ease);
+}
+.tool-badge:hover {
+  background: linear-gradient(135deg, rgba(99,102,241,0.22), rgba(6,182,212,0.15));
+  border-color: var(--violet);
+  box-shadow: 0 0 20px var(--glow-violet);
+  transform: translateY(-2px);
+}
+
+/* ============================================================================
+   MOBILE FLOATING CTA
+   ========================================================================== */
+.mobile-cta {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 40;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--violet), var(--violet-2));
+  box-shadow: 0 10px 34px var(--glow-violet);
+  transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+.mobile-cta svg { width: 22px; height: 22px; }
+.mobile-cta:hover {
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 16px 48px var(--glow-violet);
+}
+@media (max-width: 640px) {
+  .mobile-cta { display: flex; }
+}
+
+/* ============================================================================
+   SCROLL TO TOP
+   ========================================================================== */
+.scroll-top {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 40;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(11,11,15,0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-strong);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all .4s var(--ease);
+  cursor: pointer;
+}
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+.scroll-top:hover {
+  background: var(--violet);
+  border-color: transparent;
+  box-shadow: 0 0 24px var(--glow-violet);
+}
+.scroll-top svg { width: 20px; height: 20px; }
+@media (max-width: 640px) {
+  .scroll-top { left: auto; right: 90px; }
+}
+
+/* ============================================================================
+   SCROLL REVEAL ANIMATIONS (IntersectionObserver)
+   ========================================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .7s var(--ease), transform .7s var(--ease);
+}
+.reveal.revealed {
+  opacity: 1;
+  transform: none;
+}
+
+/* ============================================================================
+   SKELETON / LOADING STATES
+   ========================================================================== */
+.card img.thumb[data-loaded="false"],
+.card img.thumb:not([src]) {
+  background: linear-gradient(110deg, rgba(255,255,255,0.04) 30%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.04) 70%);
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease infinite;
+  min-height: 200px;
+}
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+}
+
+/* ============================================================================
+   KEYBOARD FOCUS STYLES
+   ========================================================================== */
+:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.card:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 4px;
+  border-radius: var(--radius);
+}
+.filter-btn:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  .reveal { opacity: 1; transform: none; }
 }
