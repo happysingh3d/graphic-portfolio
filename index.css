@@ -505,6 +505,17 @@ main, .site-header, .site-footer {
   border-radius: 4px;
   transition: transform 0.6s var(--ease);
 }
+.card .thumb-wrap.logo-contain {
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+}
+.card .thumb-wrap.logo-contain img.thumb {
+  width: auto;
+  height: auto;
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+}
 .card:hover {
   transform: translateY(-6px);
 }
