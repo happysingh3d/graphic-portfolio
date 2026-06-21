@@ -45,6 +45,17 @@ function setupHeroGridClicks() {
   });
 }
 
+/* ---------- Explore Grid Clicks ---------- */
+function setupExploreGridClicks() {
+  $$(".explore-item").forEach(item => {
+    const open = () => openModal(item.dataset.id);
+    item.addEventListener("click", open);
+    item.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
+    });
+  });
+}
+
 /* ---------- Navigation Spy & Scroll Anchors ---------- */
 function initNavObserver() {
   const sections = [$("#top"), $("#about"), $("#work"), $("#contact")];
@@ -261,6 +272,7 @@ const escapeAttr = escapeHtml;
 $("#year").textContent = new Date().getFullYear();
 setupShowcaseClicks();
 setupHeroGridClicks();
+setupExploreGridClicks();
 initNavObserver();
 initScrollReveal();
 initImageFallbacks();
