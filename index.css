@@ -1142,7 +1142,7 @@ main, .site-header, .site-footer {
 }
 .explore-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 15px;
 }
 .explore-item {

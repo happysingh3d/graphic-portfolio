@@ -53,7 +53,7 @@ const designs = [
     "id": "branding-logos",
     "title": "Logo Design Collection",
     "category": "Branding",
-    "description": "A showcase of 18 logo designs spanning multiple industries — from restaurants and real estate to tech startups and personal brands. Each mark was crafted to be memorable, scalable, and versatile across all media. Tools used: Adobe Illustrator, CorelDraw.",
+    "description": "A showcase of 28 logo designs spanning multiple industries — from restaurants and real estate to tech startups and personal brands. Each mark was crafted to be memorable, scalable, and versatile across all media. Tools used: Adobe Illustrator, CorelDraw.",
     "source": "",
     "thumbnail": "web/assets/branding/branding-logos_cover_thumb.jpg",
     "images": [
@@ -74,7 +74,17 @@ const designs = [
       "web/assets/branding/branding-logos_15.jpg",
       "web/assets/branding/branding-logos_16.jpg",
       "web/assets/branding/branding-logos_17.jpg",
-      "web/assets/branding/branding-logos_18.jpg"
+      "web/assets/branding/branding-logos_18.jpg",
+      "web/assets/branding/branding-logo_&_brand_identity_01.jpg",
+      "web/assets/branding/branding-logo_&_brand_identity_02.jpg",
+      "web/assets/branding/branding-logo_&_brand_identity_03.jpg",
+      "web/assets/branding/branding-logo_&_brand_identity_04.jpg",
+      "web/assets/branding/branding-logo_&_brand_identity_05.jpg",
+      "web/assets/branding/branding-logo_&_brand_identity_06.jpg",
+      "web/assets/branding/branding-logo_&_brand_identity_07.jpg",
+      "web/assets/branding/branding-logo_&_brand_identity_08.jpg",
+      "web/assets/branding/branding-logo_&_brand_identity_09.jpg",
+      "web/assets/branding/branding-logo_&_brand_identity_10.jpg"
     ],
     "count": 18
   },
@@ -126,7 +136,8 @@ const designs = [
       "web/assets/motion_graphics/motion_graphics-motion_graphic_02.gif",
       "web/assets/motion_graphics/motion_graphics-motion_graphic_03.gif",
       "web/assets/motion_graphics/motion_graphics-motion_graphic_04.gif",
-      "web/assets/motion_graphics/motion_graphics-motion_graphic_05.gif"
+      "web/assets/motion_graphics/motion_graphics-motion_graphic_05.gif",
+      "web/assets/motion_graphics/motion_graphics-logo_animation_01.gif"
     ],
     "count": 5
   },
