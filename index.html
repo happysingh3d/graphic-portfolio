@@ -28,53 +28,287 @@
 </head>
 <body>
 
+  <!-- ===================== SCRIBBLER / DOODLES ===================== -->
+  <!-- Top Right Scribble -->
+  <div class="scribble scribble-top-right" aria-hidden="true">
+    <svg viewBox="0 0 400 150" fill="none">
+      <path d="M 50,20 Q 150,-10 250,60 T 400,10" stroke="#111" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M 280,45 Q 310,25 350,55" stroke="#111" stroke-width="0.8" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- Bottom Left Scribble -->
+  <div class="scribble scribble-bottom-left" aria-hidden="true">
+    <svg viewBox="0 0 250 150" fill="none">
+      <path d="M 10,130 Q 80,100 110,40 T 230,120" stroke="#111" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M 40,90 Q 70,110 50,130" stroke="#111" stroke-width="0.8" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <!-- ===================== LEFT SIDEBAR ===================== -->
+  <aside class="left-sidebar">
+    <div class="sidebar-top">
+      <span class="vertical-text">BASED IN INDIA</span>
+      <div class="vertical-line"></div>
+    </div>
+    <div class="sidebar-bottom">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="vertical-link">INSTAGRAM</a>
+      <a href="https://www.behance.net/" target="_blank" rel="noopener" class="vertical-link">BEHANCE</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="vertical-link">LINKEDIN</a>
+    </div>
+  </aside>
+
   <!-- ===================== HEADER ===================== -->
   <header class="site-header">
     <div class="wrap nav">
       <a class="brand" href="#top" aria-label="Home">
-        <span class="mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none"><path d="M9 24V8h3v6.4h8V8h3v16h-3v-6.6h-8V24z" fill="white"/></svg>
-        </span>
         <span class="name">
-          <b>Harpreet Singh Uppal</b>
-          <span>Graphic Designer</span>
+          <b>Happy Singh</b>
         </span>
       </a>
 
       <span class="nav-spacer"></span>
 
-      <nav class="filters" id="filters" role="tablist" aria-label="Project categories"></nav>
+      <nav class="nav-links" role="navigation" aria-label="Main Navigation">
+        <a href="#top" class="nav-link active">HOME</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#work" class="nav-link">WORK</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
 
-      <a class="nav-cta" href="#contact">Let's talk</a>
+      <a class="nav-cta" href="#contact">LET'S TALK <span class="arrow">↗</span></a>
     </div>
   </header>
 
   <!-- ===================== HERO ===================== -->
   <main id="top">
     <section class="hero wrap">
-      <span class="eyebrow"><span class="dot"></span> Brand · Type · Motion · Print</span>
-      <h1>Designing brands that <span class="grad">look unforgettable.</span></h1>
-      <p class="lead">A curated portfolio of logo systems, typography, motion graphics, posters and character design — crafted for clients across food &amp; beverage, entertainment, lifestyle and beyond.</p>
-      <div class="hero-stats" id="heroStats"></div>
+      <div class="hero-columns">
+        <div class="hero-left">
+          <span class="eyebrow">GRAPHIC DESIGNER</span>
+          <h1>Designs that<br>communicate,<br>connect <span class="accent-amp">&amp;</span> convert.</h1>
+          <p class="lead">I create impactful visual solutions for print and digital platforms that help brands stand out and leave a lasting impression.</p>
+          
+          <div class="hero-actions">
+            <a class="view-work-btn" href="#work">
+              VIEW WORK <span class="arrow">→</span>
+            </a>
+            <!-- Hero Button Scribble Doodle -->
+            <div class="scribble scribble-hero-btn" aria-hidden="true">
+              <svg viewBox="0 0 120 40" fill="none">
+                <path d="M 5,20 Q 35,5 70,32 T 115,18" stroke="#111" stroke-width="1.2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="scroll-explore">
+            <span>SCROLL TO EXPLORE</span>
+            <span class="down-arrow">↓</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-gallery">
+            <div class="hero-col-center">
+              <div class="hero-card tall hero-grid-item" data-id="posters_banners-cmyk_banner" role="button" tabindex="0" aria-label="Open CMYK Poster Design">
+                <span class="hero-card-tag">VISION</span>
+                <img src="web/assets/posters_banners/posters_banners-cmyk_banner_11.jpg" alt="Creative Print Poster Design" />
+              </div>
+              <div class="hero-row-sm">
+                <div class="hero-card square hero-grid-item" data-id="typography-typography" role="button" tabindex="0" aria-label="Open Mirchi Run Typography">
+                  <span class="hero-card-tag">PIXEL STUDIO</span>
+                  <img src="web/assets/typography/typography-typography_03.jpg" alt="Mirchi Run Typographic Art" />
+                </div>
+                <div class="hero-card square hero-grid-item" data-id="branding-logo_&_brand_identity" role="button" tabindex="0" aria-label="Open Sodhi's Sessions Brand Design">
+                  <span class="hero-card-tag">EDITORIAL</span>
+                  <img src="web/assets/branding/branding-logo_&_brand_identity_06.jpg" alt="Sodhi's Sessions Brand Design" />
+                </div>
+              </div>
+            </div>
+            <div class="hero-col-sides">
+              <div class="hero-card landscape hero-grid-item" data-id="characters-2d_character" role="button" tabindex="0" aria-label="Open Fighter Character Sculpt Sheet">
+                <span class="hero-card-tag">LIMITLESS</span>
+                <img src="web/assets/characters/characters-2d_character_03.jpg" alt="Fighter Character Sculpt Sheet" />
+              </div>
+              <div class="hero-card landscape hero-grid-item" data-id="posters_banners-bannersposters" role="button" tabindex="0" aria-label="Open Honey Packaging Label">
+                <span class="hero-card-tag">OUTDOOR</span>
+                <img src="web/assets/posters_banners/posters_banners-bannersposters_02.jpg" alt="Natural Honey Label Packaging" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ===================== GALLERY ===================== -->
-    <section class="wrap" id="work">
-      <div class="gallery-head">
-        <h2>Selected Work</h2>
-        <span class="count" id="resultCount"></span>
+    <!-- ===================== WORK SHOWCASE SECTION ===================== -->
+    <section class="work-showcase wrap" id="work">
+      <div class="section-divider-line"></div>
+      
+      <!-- Row 1: PRINT DESIGN -->
+      <div class="showcase-row">
+        <div class="showcase-info">
+          <h2>PRINT DESIGN</h2>
+          <p>Posters, Flyers, Brochures, Magazines &amp; more.</p>
+          <a class="view-all-projects showcase-card" data-id="posters_banners-bannersposters" href="#work">VIEW ALL PROJECTS <span class="arrow">→</span></a>
+        </div>
+        <div class="showcase-cards cols-3">
+          <article class="card showcase-card" data-id="posters_banners-bannersposters" role="button" tabindex="0" aria-label="Open Natural Honey Label Design">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/posters_banners/posters_banners-bannersposters_02.jpg" alt="Natural Honey Label Design" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">Honey Packaging Label</h3>
+            </div>
+          </article>
+          <article class="card showcase-card" data-id="posters_banners-cmyk_banner" role="button" tabindex="0" aria-label="Open Judiciary Coaching Poster">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/posters_banners/posters_banners-cmyk_banner_03.jpg" alt="Judiciary Coaching Poster" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">Judiciary Coaching Poster</h3>
+            </div>
+          </article>
+          <article class="card showcase-card" data-id="posters_banners-digital_banner" role="button" tabindex="0" aria-label="Open Chinese Combo Menu Poster">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/posters_banners/posters_banners-digital_banner_04.jpg" alt="Chinese Combo Menu Poster" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">Chinese Combo Menu Poster</h3>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="grid" id="grid"></div>
-      <div class="empty" id="empty" hidden>No projects in this category yet.</div>
+
+      <!-- Row 2: SOCIAL MEDIA -->
+      <div class="showcase-row">
+        <div class="showcase-info">
+          <h2>SOCIAL MEDIA</h2>
+          <p>Creative posts, stories &amp; ad designs that engage.</p>
+          <a class="view-all-projects showcase-card" data-id="posters_banners-digital_banner" href="#work">VIEW ALL PROJECTS <span class="arrow">→</span></a>
+        </div>
+        <div class="showcase-cards cols-4">
+          <article class="card showcase-card" data-id="posters_banners-digital_banner" role="button" tabindex="0" aria-label="Open Hero MotoCorp Sales Banner">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/posters_banners/posters_banners-digital_banner_01.jpg" alt="Hero MotoCorp Sales Banner" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">Hero MotoCorp Sales Banner</h3>
+            </div>
+          </article>
+          <article class="card showcase-card" data-id="posters_banners-digital_banner" role="button" tabindex="0" aria-label="Open CanEuro Migration Social Post">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/posters_banners/posters_banners-digital_banner_02.jpg" alt="CanEuro Migration Social Post" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">CanEuro Migration Social Post</h3>
+            </div>
+          </article>
+          <article class="card showcase-card" data-id="posters_banners-digital_banner" role="button" tabindex="0" aria-label="Open CanEuro Canada Visa Post">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/posters_banners/posters_banners-digital_banner_05.jpg" alt="CanEuro Canada Visa Post" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">CanEuro Canada Visa Post</h3>
+            </div>
+          </article>
+          <article class="card showcase-card" data-id="posters_banners-digital_banner" role="button" tabindex="0" aria-label="Open CanEuro Travel Agency Post">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/posters_banners/posters_banners-digital_banner_06.jpg" alt="CanEuro Travel Agency Post" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">CanEuro Travel Agency Post</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Row 3: BRANDING -->
+      <div class="showcase-row">
+        <div class="showcase-info">
+          <h2>BRANDING</h2>
+          <p>Logos, brand identity, stationery &amp; branding mockups.</p>
+          <a class="view-all-projects showcase-card" data-id="branding-logo_&_brand_identity" href="#work">VIEW ALL PROJECTS <span class="arrow">→</span></a>
+        </div>
+        <div class="showcase-cards cols-4">
+          <article class="card showcase-card" data-id="branding-logo_&_brand_identity" role="button" tabindex="0" aria-label="Open Tandoori Beatz Logo">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/branding/branding-logo_&_brand_identity_01.jpg" alt="Tandoori Beatz Logo" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">Tandoori Beatz Logo</h3>
+            </div>
+          </article>
+          <article class="card showcase-card" data-id="branding-logo_&_brand_identity" role="button" tabindex="0" aria-label="Open DeadHunk Gaming Logo">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/branding/branding-logo_&_brand_identity_02.jpg" alt="DeadHunk Gaming Logo" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">DeadHunk Gaming Logo</h3>
+            </div>
+          </article>
+          <article class="card showcase-card" data-id="branding-logo_&_brand_identity" role="button" tabindex="0" aria-label="Open The Valiant Syndicate Logo">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/branding/branding-logo_&_brand_identity_03.jpg" alt="The Valiant Syndicate Logo" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">The Valiant Syndicate Logo</h3>
+            </div>
+          </article>
+          <article class="card showcase-card" data-id="branding-logo_&_brand_identity" role="button" tabindex="0" aria-label="Open Momo's Beatz Logo">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/branding/branding-logo_&_brand_identity_04.jpg" alt="Momo's Beatz Logo" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">Momo's Beatz Logo</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Row 4: ILLUSTRATION -->
+      <div class="showcase-row">
+        <div class="showcase-info">
+          <h2>ILLUSTRATION</h2>
+          <p>Character illustrations and custom artwork.</p>
+          <a class="view-all-projects showcase-card" data-id="characters-2d_character" href="#work">VIEW ALL PROJECTS <span class="arrow">→</span></a>
+        </div>
+        <div class="showcase-cards cols-3">
+          <article class="card showcase-card" data-id="characters-2d_character" role="button" tabindex="0" aria-label="Open Astronaut Concept Sheet">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/characters/characters-2d_character_01.jpg" alt="Astronaut Concept Sheet" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">Astronaut Concept Sheet</h3>
+            </div>
+          </article>
+          <article class="card showcase-card" data-id="characters-2d_character" role="button" tabindex="0" aria-label="Open Space Ranger Concept Sheet">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/characters/characters-2d_character_02.jpg" alt="Space Ranger Concept Sheet" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">Space Ranger Concept Sheet</h3>
+            </div>
+          </article>
+          <article class="card showcase-card" data-id="characters-2d_character" role="button" tabindex="0" aria-label="Open Fighter Character Sculpt Sheet">
+            <div class="thumb-wrap">
+              <img class="thumb" src="web/assets/characters/characters-2d_character_03.jpg" alt="Fighter Character Sculpt Sheet" loading="lazy" />
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">Fighter Character Sculpt Sheet</h3>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
     <!-- ===================== ABOUT ===================== -->
     <section class="about wrap" id="about">
+      <div class="section-divider-line"></div>
       <div class="about-grid">
         <div class="about-text">
-          <span class="eyebrow"><span class="dot"></span> About Me</span>
-          <h2>Bringing ideas to life through <span class="grad">visual storytelling.</span></h2>
-          <p>I'm Harpreet Singh Uppal — a Graphic Designer, Creative Director and 3D Artist based in Mohali, India. With years of experience spanning brand identity, typography, motion graphics, print design and 3D visualization, I've crafted visual solutions for clients across food & beverage, entertainment, immigration, automotive and lifestyle sectors.</p>
+          <span class="eyebrow">ABOUT ME</span>
+          <h2>Bringing ideas to life through visual storytelling.</h2>
+          <p>I'm Happy Singh — a Graphic Designer, Creative Director and 3D Artist based in Mohali, India. With years of experience spanning brand identity, typography, motion graphics, print design and 3D visualization, I've crafted visual solutions for clients across food & beverage, entertainment, immigration, automotive and lifestyle sectors.</p>
           <p>From concept sketches to pixel-perfect delivery, I bring a meticulous eye for detail and a passion for design that communicates, captivates, and converts.</p>
           <div class="about-clients">
             <span class="about-label">Clients include</span>
@@ -97,8 +331,6 @@
               <span class="tool-badge">Adobe Premiere Pro</span>
               <span class="tool-badge">Adobe InDesign</span>
               <span class="tool-badge">CorelDraw</span>
-              <span class="tool-badge">Blender</span>
-              <span class="tool-badge">Unity</span>
             </div>
           </div>
         </div>
@@ -118,6 +350,7 @@
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer" id="contact">
+    <div class="section-divider-line"></div>
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-cta">
@@ -147,7 +380,7 @@
         </div>
       </div>
       <div class="footer-base">
-        <span>© <span id="year"></span> Harpreet Singh Uppal — All rights reserved.</span>
+        <span>© <span id="year"></span> Happy Singh — All rights reserved.</span>
         <span>Designed &amp; built with care · Mohali, India</span>
       </div>
     </div>
