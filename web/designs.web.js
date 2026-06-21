@@ -53,7 +53,7 @@ const designs = [
     "id": "branding-logos",
     "title": "Logo Design Collection",
     "category": "Branding",
-    "description": "A showcase of 28 logo designs spanning multiple industries — from restaurants and real estate to tech startups and personal brands. Each mark was crafted to be memorable, scalable, and versatile across all media. Tools used: Adobe Illustrator, CorelDraw.",
+    "description": "A showcase of 26 logo designs spanning multiple industries — from restaurants and real estate to tech startups and personal brands. Each mark was crafted to be memorable, scalable, and versatile across all media. Tools used: Adobe Illustrator, CorelDraw.",
     "source": "",
     "thumbnail": "web/assets/branding/branding-logos_cover_thumb.jpg",
     "images": [
@@ -62,10 +62,8 @@ const designs = [
       "web/assets/branding/branding-logos_03.jpg",
       "web/assets/branding/branding-logos_04.jpg",
       "web/assets/branding/branding-logos_05.jpg",
-      "web/assets/branding/branding-logos_06.jpg",
       "web/assets/branding/branding-logos_07.jpg",
       "web/assets/branding/branding-logos_08.jpg",
-      "web/assets/branding/branding-logos_09.jpg",
       "web/assets/branding/branding-logos_10.jpg",
       "web/assets/branding/branding-logos_11.jpg",
       "web/assets/branding/branding-logos_12.jpg",
@@ -86,7 +84,7 @@ const designs = [
       "web/assets/branding/branding-logo_&_brand_identity_09.jpg",
       "web/assets/branding/branding-logo_&_brand_identity_10.jpg"
     ],
-    "count": 18
+    "count": 16
   },
   {
     "id": "motion_graphics-logo_animation",
