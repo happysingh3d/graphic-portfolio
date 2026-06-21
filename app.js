@@ -129,7 +129,8 @@ function openModal(id, imgSrc = null) {
   current.images.forEach((src, i) => {
     const div = document.createElement("div");
     div.className = "slide" + (i === slide ? " active" : "");
-    div.innerHTML = `<img src="${src}" alt="${escapeAttr(current.title)} — image ${i + 1}" loading="lazy" />`;
+    const isGif = src.toLowerCase().endsWith(".gif");
+    div.innerHTML = `<img src="${src}" alt="${escapeAttr(current.title)} — image ${i + 1}" loading="${isGif ? "eager" : "lazy"}" />`;
     div.querySelector("img").addEventListener("click", e => {
       e.target.classList.toggle("zoomed");
     });

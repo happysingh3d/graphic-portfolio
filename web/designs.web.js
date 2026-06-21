@@ -27,8 +27,8 @@ const designs = [
       "web/assets/posters_banners/posters_banners-bannersposters_03.jpg",
       "web/assets/posters_banners/posters_banners-bannersposters_04.jpg",
       "web/assets/posters_banners/posters_banners-bannersposters_05.jpg",
-      "web/assets/posters_banners/posters_banners-bannersposters_06.jpg",
-      "web/assets/posters_banners/posters_banners-bannersposters_07.jpg",
+      "web/assets/posters_banners/posters_banners-bannersposters_06.gif",
+      "web/assets/posters_banners/posters_banners-bannersposters_07.gif",
       "web/assets/posters_banners/posters_banners-bannersposters_08.jpg",
       "web/assets/posters_banners/posters_banners-bannersposters_09.jpg",
       "web/assets/posters_banners/posters_banners-bannersposters_10.jpg",
@@ -86,7 +86,7 @@ const designs = [
     "source": "",
     "thumbnail": "web/assets/motion_graphics/motion_graphics-logo_animation_cover_thumb.jpg",
     "images": [
-      "web/assets/motion_graphics/motion_graphics-logo_animation_01.jpg"
+      "web/assets/motion_graphics/motion_graphics-logo_animation_01.gif"
     ],
     "count": 1
   },
@@ -122,11 +122,11 @@ const designs = [
     "source": "",
     "thumbnail": "web/assets/motion_graphics/motion_graphics-motion_graphic_cover_thumb.jpg",
     "images": [
-      "web/assets/motion_graphics/motion_graphics-motion_graphic_01.jpg",
-      "web/assets/motion_graphics/motion_graphics-motion_graphic_02.jpg",
-      "web/assets/motion_graphics/motion_graphics-motion_graphic_03.jpg",
-      "web/assets/motion_graphics/motion_graphics-motion_graphic_04.jpg",
-      "web/assets/motion_graphics/motion_graphics-motion_graphic_05.jpg"
+      "web/assets/motion_graphics/motion_graphics-motion_graphic_01.gif",
+      "web/assets/motion_graphics/motion_graphics-motion_graphic_02.gif",
+      "web/assets/motion_graphics/motion_graphics-motion_graphic_03.gif",
+      "web/assets/motion_graphics/motion_graphics-motion_graphic_04.gif",
+      "web/assets/motion_graphics/motion_graphics-motion_graphic_05.gif"
     ],
     "count": 5
   },
